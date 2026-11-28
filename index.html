@@ -4,27 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Rifqi Syauqi</title>
+ 
+  <!-- Google Fonts: Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+ 
+  <!-- CSS eksternal -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header>
-    <h1>Akhmad Rifqi Syauqi</h1>
+ 
+  <header class="site-header">
+    <h1 class="logo">Akhmad Rifqi Syauqi</h1>
     <nav>
-      <a href="#hero">Beranda</a> |
-      <a href="#about">Tentang Saya</a> |
-      <a href="#skill">Skill</a> |
-      <a href="#kontak">Kontak</a>
+      <ul class="nav-menu">
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#about">Tentang Saya</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
     </nav>
   </header>
-
+ 
   <main>
-
+ 
     <section id="hero">
       <img src="foto.jpeg" alt="Foto profil Akhmad Rifqi Syauqi" width="200">
-      <h2> Akhmad Rifqi Syauqi</h2>
+      <h2>Akhmad Rifqi Syauqi</h2>
       <p>Calon web developer yang suka belajar hal baru.</p>
+      <a href="#proyek" class="btn">Lihat Proyek</a>
     </section>
-
+ 
     <section id="about">
       <h2>Tentang Saya</h2>
       <p>
@@ -32,61 +44,71 @@
         website agar bisa mengembangkan karier di bidang teknologi.
       </p>
     </section>
-
+ 
     <section id="skill">
       <h2>Skill</h2>
-      <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-          <tr>
-            <th>No</th>
-            <th>Nama Skill</th>
-            <th>Tingkat Kemahiran</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>HTML</td>
-            <td>Basic</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Git &amp; GitHub</td>
-            <td>Basic</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Skill ketiga Anda</td>
-            <td>Intermediate</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="skill-grid">
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>Tingkat: Basic</p>
+        </article>
+        <article class="skill-card">
+          <h3>Git &amp; GitHub</h3>
+          <p>Tingkat: Basic</p>
+        </article>
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>Tingkat: Basic</p>
+        </article>
+      </div>
     </section>
-
+ 
+    <section id="proyek">
+      <h2>Proyek</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Portofolio Pribadi</h3>
+          <p>Halaman portofolio dengan HTML dan CSS, dipublikasikan lewat GitHub Pages.</p>
+          <a href="https://github.com/RifqiSyauqi/portofolio-hitlab" class="btn">Lihat repositori</a>
+        </article>
+        <article class="project-card">
+          <h3>Makalah Noun Clause</h3>
+          <p>Tugas bahasa Inggris tentang fungsi noun clause beserta studi kasus.</p>
+          <a href="#" class="btn">Lihat proyek</a>
+        </article>
+        <article class="project-card">
+          <h3>Presentasi Metaverse</h3>
+          <p>Presentasi tentang dampak Metaverse dan VR terhadap spiritualitas.</p>
+          <a href="#" class="btn">Lihat proyek</a>
+        </article>
+      </div>
+    </section>
+ 
     <section id="kontak">
       <h2>Kontak</h2>
-      <form action="#" method="post">
+      <form action="#" method="post" class="contact-form">
         <p>
-          <label for="nama">Nama:</label><br>
+          <label for="nama">Nama:</label>
           <input type="text" id="nama" name="nama" required>
         </p>
         <p>
-          <label for="email">Email:</label><br>
+          <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
         </p>
         <p>
-          <label for="pesan">Pesan:</label><br>
-          <textarea id="pesan" name="pesan" rows="5" cols="40" required></textarea>
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" rows="5" required></textarea>
         </p>
-        <button type="submit">Submit</button>
+        <button type="submit" class="btn">Kirim pesan</button>
       </form>
     </section>
-
+ 
   </main>
-
+ 
   <footer>
     <p>&copy; 2026 Akhmad Rifqi Syauqi. Peserta Tech Class Web Dev 2026.</p>
   </footer>
-
+ 
 </body>
 </html>
+ 
