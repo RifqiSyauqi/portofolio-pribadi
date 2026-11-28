@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio Rifqi Syauqi</title>
-
+ 
   <!-- Google Fonts: Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-
+ 
   <!-- CSS eksternal -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+ 
   <header class="site-header">
     <h1 class="logo">Akhmad Rifqi Syauqi</h1>
     <nav>
@@ -26,17 +26,18 @@
         <li><a href="#kontak">Kontak</a></li>
       </ul>
     </nav>
+    <button type="button" id="theme-toggle" class="btn theme-btn">Mode Gelap</button>
   </header>
-
+ 
   <main>
-
+ 
     <section id="hero">
       <img src="foto.jpeg" alt="Foto profil Akhmad Rifqi Syauqi" width="200">
       <h2>Akhmad Rifqi Syauqi</h2>
       <p>Calon web developer yang suka belajar hal baru.</p>
       <a href="#proyek" class="btn">Lihat Proyek</a>
     </section>
-
+ 
     <section id="about">
       <h2>Tentang Saya</h2>
       <p>
@@ -44,7 +45,7 @@
         website agar bisa mengembangkan karier di bidang teknologi.
       </p>
     </section>
-
+ 
     <section id="skill">
       <h2>Skill</h2>
       <div class="skill-grid">
@@ -62,32 +63,32 @@
         </article>
       </div>
     </section>
-
+ 
     <section id="proyek">
       <h2>Proyek</h2>
       <div class="project-grid">
-
+ 
         <article class="project-card">
           <h3>Halaman Hello World</h3>
           <p>Proyek pertama: halaman HTML sederhana yang di-push ke GitHub dan dipublikasikan lewat GitHub Pages.</p>
           <a href="https://github.com/RifqiSyauqi/portofolio-hitlab" class="btn">Lihat repositori</a>
         </article>
-
+ 
         <article class="project-card">
           <h3>Portofolio Pribadi (HTML)</h3>
           <p>Struktur portofolio dengan header, navigasi, hero, tentang saya, tabel skill, dan form kontak tanpa CSS.</p>
           <a href="https://github.com/RifqiSyauqi/portofolio-pribadi" class="btn">Lihat repositori</a>
         </article>
-
+ 
         <article class="project-card">
           <h3>Portofolio Berstyle CSS</h3>
           <p>Portofolio yang dipercantik dengan Flexbox, CSS Grid, Google Fonts, dan tampilan responsif.</p>
-          <a href="https://rifqisyauqi.github.io/portofolio-pribadi/" class="btn">Buka website</a>
+          <a href="https://rifqisyauqi.github.io/portofolio-hitlab/" class="btn">Buka website</a>
         </article>
-
+ 
       </div>
     </section>
-
+ 
     <section id="kontak">
       <h2>Kontak</h2>
       <form action="#" method="post" class="contact-form">
@@ -105,13 +106,16 @@
         </p>
         <button type="submit" class="btn">Kirim pesan</button>
       </form>
+      <p id="konfirmasi" class="konfirmasi" aria-live="polite"></p>
     </section>
-
+ 
   </main>
-
+ 
   <footer>
     <p>&copy; 2026 Akhmad Rifqi Syauqi. Peserta Tech Class Web Dev 2026.</p>
   </footer>
-
+ 
+  <script src="script.js"></script>
 </body>
 </html>
+ 
